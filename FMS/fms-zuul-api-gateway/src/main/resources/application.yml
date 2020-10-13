@@ -1,0 +1,18 @@
+spring:
+  application:
+    name:  api-gateway-ms
+server:
+  port: 8321
+zuul:
+  routes:
+   user-ms-admin:
+      path: /users/**
+      service-id: user-ms
+      strip-prefix: false
+     
+      
+      
+      
+      
+      
+    
